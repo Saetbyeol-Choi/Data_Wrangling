@@ -8,7 +8,6 @@ uvicorn (folder_name).main:app --reload
 
 
 
-# Running a FastAPI Application
 # FastAPI Application Setup Guide
 
 This README provides instructions for setting up and running a FastAPI application with Uvicorn as the ASGI server.
@@ -36,14 +35,21 @@ Your project directory should be structured as follows. This example assumes you
 ```
 
 ## Running the Application
+To start the server and run your FastAPI application, follow these instructions:
 
-To start the server and run your FastAPI application, execute the following command. Replace `folder_name` with your actual folder name:
+If main.py is in the root of your project folder, execute:
 
-```bash
+```
+uvicorn main:app --reload
+```
+
+If main.py is under a specific folder (e.g., folder_name), use:
+
+```
 uvicorn folder_name.main:app --reload
 ```
 
-The `--reload` option makes the server restart after code changes, which is helpful during development.
+The --reload option makes the server restart after code changes, which is helpful during development.
 
 ## Accessing the Application
 
