@@ -39,9 +39,8 @@ To start the server and run your FastAPI application, follow these instructions:
 
 If main.py is in the root of your project folder, execute:
 
-```
-uvicorn main:app --reload
-```
+
+`uvicorn main:app --reload`
 
 If main.py is under a specific folder (e.g., folder_name), use:
 
